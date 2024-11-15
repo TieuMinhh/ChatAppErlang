@@ -1,0 +1,41 @@
+/* Tin nhắn chung */
+.message {
+    display: flex;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 75%;
+    clear: both;
+  }
+  
+  .message .message-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message .message-content .user {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .message .message-content .text {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #333;
+  }
+  
+  /* Tin nhắn của người gửi (của bạn) */
+  .message.own {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+    border-radius: 15px 15px 0 15px;
+  }
+  
+  .message.own .message-content .user {
+    color: #007bff;
+  }
+  
+  .message.own .message-content .text {
+    color: #333;
+  }
+  

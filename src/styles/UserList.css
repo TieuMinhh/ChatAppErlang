@@ -1,0 +1,76 @@
+/* Toàn bộ danh sách người dùng */
+.user-list {
+    width: 250px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ddd;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .user-list h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .user-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .user-list .user-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .user-list .user-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Avatar */
+  .user-item .avatar {
+    margin-right: 10px;
+  }
+  
+  .user-item .avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Thông tin người dùng */
+  .user-item .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-item .username {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .user-item .status {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  /* Màu sắc trạng thái */
+  .user-item .status.online {
+    color: #28a745;
+  }
+  
+  .user-item .status.offline {
+    color: #dc3545;
+  }
+  
+  .user-item .status.busy {
+    color: #ffc107;
+  }
+  
