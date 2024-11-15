@@ -31,7 +31,7 @@ const App = () => {
 
   return (
     <div className="chat_pages">
-      <h1>Chat Application</h1>
+      {/* <h1>Chat Application</h1> */}
       <div className="chat-container">
         <UserList users={users} />  {/* Hiển thị danh sách người dùng */}
         <ChatBox

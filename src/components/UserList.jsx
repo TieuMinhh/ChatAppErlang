@@ -12,7 +12,7 @@ const mockUsers = [
 const UserList = () => {
   return (
     <div className="user-list">
-      <h3>Recent Chatting</h3>
+      <h3>Recent Chat</h3>
       <ul>
         {mockUsers.map((user, index) => (
           <li key={index} className="user-item">

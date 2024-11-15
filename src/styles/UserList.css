@@ -1,76 +1,94 @@
 /* Toàn bộ danh sách người dùng */
 .user-list {
-    width: 250px;
-    padding: 15px;
-    background-color: #f8f8f8;
-    border-right: 1px solid #ddd;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .user-list h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #333;
-    font-weight: 600;
-  }
-  
-  .user-list ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .user-list .user-item {
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .user-list .user-item:hover {
-    background-color: #f1f1f1;
-  }
-  
-  /* Avatar */
-  .user-item .avatar {
-    margin-right: 10px;
-  }
-  
-  .user-item .avatar img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  /* Thông tin người dùng */
-  .user-item .user-info {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .user-item .username {
-    font-weight: 500;
-    color: #333;
-  }
-  
-  .user-item .status {
-    font-size: 0.9rem;
-    color: #888;
-  }
-  
-  /* Màu sắc trạng thái */
-  .user-item .status.online {
-    color: #28a745;
-  }
-  
-  .user-item .status.offline {
-    color: #dc3545;
-  }
-  
-  .user-item .status.busy {
-    color: #ffc107;
-  }
-  
+  width: 280px;
+  padding: 20px;
+  background-color: #f8f9fa;  /* Màu nền sáng và dễ nhìn */
+  border-right: 2px solid #ddd;  /* Dùng border dày hơn để tạo sự tách biệt rõ ràng */
+  font-family: 'Arial', sans-serif;
+  border-radius: 10px;  /* Bo góc cho danh sách người dùng */
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);  /* Thêm bóng mờ cho dễ nhìn */
+}
+
+/* Tiêu đề danh sách người dùng */
+.user-list h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #343a40;  /* Màu đậm cho tiêu đề */
+  font-weight: 600;
+  text-align: center;  /* Căn giữa tiêu đề */
+}
+
+/* Danh sách người dùng */
+.user-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* Thẻ người dùng */
+.user-list .user-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;  /* Bo góc cho các phần tử người dùng */
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;  /* Hiệu ứng khi hover */
+  background-color: #ffffff;  /* Màu nền trắng cho mỗi người dùng */
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);  /* Thêm bóng cho mỗi người dùng */
+}
+
+/* Hiệu ứng hover cho mỗi người dùng */
+.user-list .user-item:hover {
+  background-color: #e9ecef;  /* Màu nền khi hover */
+  transform: translateX(5px);  /* Hiệu ứng dịch chuyển nhẹ khi hover */
+}
+
+/* Avatar */
+.user-item .avatar {
+  margin-right: 15px;
+}
+
+.user-item .avatar img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;  /* Thêm đường viền cho avatar */
+}
+
+/* Thông tin người dùng */
+.user-item .user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tên người dùng */
+.user-item .username {
+  font-weight: 600;
+  color: #343a40;
+  font-size: 1rem;
+  margin-bottom: 5px;  /* Tạo khoảng cách giữa username và status */
+}
+
+/* Trạng thái người dùng */
+.user-item .status {
+  font-size: 0.9rem;
+  color: #868e96;
+}
+
+/* Màu sắc trạng thái */
+.user-item .status.online {
+  color: #28a745;  /* Xanh lá khi online */
+}
+
+.user-item .status.offline {
+  color: #dc3545;  /* Đỏ khi offline */
+}
+
+.user-item .status.busy {
+  color: #ffc107;  /* Vàng khi bận */
+}
+
